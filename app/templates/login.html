@@ -6,6 +6,9 @@
     <p>
         please enter your OpenID: <br>
         {{form.openid(size=80)}} <br>
+        {% for error in form.openid.errors %}
+        <span style="color: red">[{{error}}]</span>
+        {% endfor %}<br>
     </p>
     <p>{{form.rememberme}} Rememberme</p>
     <p><input type="submit" value="Sign In"></p>

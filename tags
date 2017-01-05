@@ -40,6 +40,7 @@ BOM_UTF32_LE	flask/lib/python2.7/codecs.py	/^BOM_UTF32_LE = '\\xff\\xfe\\x00\\x0
 BOM_UTF8	flask/lib/python2.7/codecs.py	/^BOM_UTF8 = '\\xef\\xbb\\xbf'$/;"	kind:variable	line:42
 BRANCH	flask/lib/python2.7/re.py	/^        from sre_constants import BRANCH, SUBPATTERN$/;"	kind:namespace	line:308
 BRANCH	flask/lib/python2.7/sre_constants.py	/^BRANCH = "branch"$/;"	kind:variable	line:41
+BooleanField	app/forms.py	/^from wtforms import StringField, BooleanField$/;"	kind:namespace	line:3
 BooleanType	flask/lib/python2.7/types.py	/^BooleanType = bool$/;"	kind:variable	line:19
 BufferType	flask/lib/python2.7/types.py	/^BufferType = buffer$/;"	kind:variable	line:36
 BufferedIncrementalDecoder	flask/lib/python2.7/codecs.py	/^class BufferedIncrementalDecoder(IncrementalDecoder):$/;"	kind:class	line:296
@@ -73,6 +74,7 @@ CHCODES	flask/lib/python2.7/sre_constants.py	/^CHCODES = [$/;"	kind:variable	lin
 CHCODES	flask/lib/python2.7/sre_constants.py	/^CHCODES = makedict(CHCODES)$/;"	kind:variable	line:159
 CH_LOCALE	flask/lib/python2.7/sre_constants.py	/^CH_LOCALE = {$/;"	kind:variable	line:184
 CH_UNICODE	flask/lib/python2.7/sre_constants.py	/^CH_UNICODE = {$/;"	kind:variable	line:195
+CSRF_ENABLED	config.py	/^CSRF_ENABLED = True$/;"	kind:variable	line:1
 Callable	flask/lib/python2.7/_abcoll.py	/^class Callable:$/;"	kind:class	line:121
 ClassType	flask/lib/python2.7/types.py	/^ClassType = type(_C)$/;"	kind:variable	line:53
 CodeType	flask/lib/python2.7/types.py	/^CodeType = type(_f.func_code)$/;"	kind:variable	line:45
@@ -201,7 +203,9 @@ Error	flask/lib/python2.7/locale.py	/^    Error = ValueError$/;"	kind:variable	l
 FAILURE	flask/lib/python2.7/sre_constants.py	/^FAILURE = "failure"$/;"	kind:variable	line:32
 FLAGS	flask/lib/python2.7/sre_parse.py	/^FLAGS = {$/;"	kind:variable	line:53
 FileType	flask/lib/python2.7/types.py	/^FileType = file$/;"	kind:variable	line:63
+Flask	app/__init__.py	/^from flask import Flask$/;"	kind:namespace	line:2
 FloatType	flask/lib/python2.7/types.py	/^FloatType = float$/;"	kind:variable	line:18
+Form	app/forms.py	/^from flask_wtf import Form$/;"	kind:namespace	line:2
 FrameType	flask/lib/python2.7/types.py	/^    FrameType = type(tb.tb_frame)$/;"	kind:variable	line:71
 FunctionType	flask/lib/python2.7/types.py	/^FunctionType = type(_f)$/;"	kind:variable	line:43
 GROUPREF	flask/lib/python2.7/sre_constants.py	/^GROUPREF = "groupref"$/;"	kind:variable	line:45
@@ -471,6 +475,8 @@ LITERAL	flask/lib/python2.7/sre_constants.py	/^LITERAL = "literal"$/;"	kind:vari
 LITERAL_IGNORE	flask/lib/python2.7/sre_constants.py	/^LITERAL_IGNORE = "literal_ignore"$/;"	kind:variable	line:53
 LambdaType	flask/lib/python2.7/types.py	/^LambdaType = type(lambda: None)         # Same as FunctionType$/;"	kind:variable	line:44
 ListType	flask/lib/python2.7/types.py	/^ListType = list$/;"	kind:variable	line:39
+LoginForm	app/forms.py	/^class LoginForm(Form):$/;"	kind:class	line:7
+LoginForm	app/views.py	/^from .forms import LoginForm$/;"	kind:namespace	line:4
 LongType	flask/lib/python2.7/types.py	/^LongType = long$/;"	kind:variable	line:17
 MAGIC	flask/lib/python2.7/sre_constants.py	/^MAGIC = 20031017$/;"	kind:variable	line:16
 MARK	flask/lib/python2.7/sre_constants.py	/^MARK = "mark"$/;"	kind:variable	line:54
@@ -509,6 +515,7 @@ RANGE	flask/lib/python2.7/sre_constants.py	/^RANGE = "range"$/;"	kind:variable	l
 REPEAT	flask/lib/python2.7/sre_constants.py	/^REPEAT = "repeat"$/;"	kind:variable	line:63
 REPEAT_CHARS	flask/lib/python2.7/sre_parse.py	/^REPEAT_CHARS = "*+?{"$/;"	kind:variable	line:20
 REPEAT_ONE	flask/lib/python2.7/sre_constants.py	/^REPEAT_ONE = "repeat_one"$/;"	kind:variable	line:64
+SECRET_KEY	config.py	/^SECRET_KEY = 'you do not know what i have set'/;"	kind:variable	line:2
 SEEK_CUR	flask/lib/python2.7/os.py	/^SEEK_CUR = 1$/;"	kind:variable	line:128
 SEEK_END	flask/lib/python2.7/os.py	/^SEEK_END = 2$/;"	kind:variable	line:129
 SEEK_SET	flask/lib/python2.7/os.py	/^SEEK_SET = 0$/;"	kind:variable	line:127
@@ -826,6 +833,7 @@ StreamWriter	flask/lib/python2.7/encodings/utf_8.py	/^class StreamWriter(codecs.
 StreamWriter	flask/lib/python2.7/encodings/utf_8_sig.py	/^class StreamWriter(codecs.StreamWriter):$/;"	kind:class	line:72
 StreamWriter	flask/lib/python2.7/encodings/uu_codec.py	/^class StreamWriter(Codec,codecs.StreamWriter):$/;"	kind:class	line:112
 StreamWriter	flask/lib/python2.7/encodings/zlib_codec.py	/^class StreamWriter(Codec,codecs.StreamWriter):$/;"	kind:class	line:85
+StringField	app/forms.py	/^from wtforms import StringField, BooleanField$/;"	kind:namespace	line:3
 StringIO	flask/lib/python2.7/encodings/quopri_codec.py	/^    from StringIO import StringIO$/;"	kind:namespace	line:10
 StringIO	flask/lib/python2.7/encodings/quopri_codec.py	/^    from cStringIO import StringIO$/;"	kind:namespace	line:8
 StringIO	flask/lib/python2.7/encodings/uu_codec.py	/^    from cStringIO import StringIO$/;"	kind:namespace	line:26
@@ -1272,6 +1280,9 @@ altsep	flask/lib/python2.7/ntpath.py	/^    altsep = '\/'$/;"	kind:variable	line:
 altsep	flask/lib/python2.7/ntpath.py	/^altsep = '\/'$/;"	kind:variable	line:30
 altsep	flask/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:120
 altsep	flask/lib/python2.7/posixpath.py	/^altsep = None$/;"	kind:variable	line:36
+app	app/__init__.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
+app	app/views.py	/^from app import app$/;"	kind:namespace	line:3
+app	run.py	/^from app import app$/;"	kind:namespace	line:1
 append	flask/lib/python2.7/_abcoll.py	/^    def append(self, value):$/;"	kind:member	line:662
 append	flask/lib/python2.7/sre_parse.py	/^    def append(self, code):$/;"	kind:member	line:149
 array	flask/lib/python2.7/sre_compile.py	/^    import array$/;"	kind:namespace	line:418
@@ -1566,6 +1577,7 @@ codecs.py	flask/lib/python2.7/codecs.py	1;"	kind:file	line:1
 commonprefix	flask/lib/python2.7/genericpath.py	/^def commonprefix(m):$/;"	kind:function	line:76
 compile	flask/lib/python2.7/re.py	/^def compile(pattern, flags=0):$/;"	kind:function	line:192
 compile	flask/lib/python2.7/sre_compile.py	/^def compile(p, flags=0):$/;"	kind:function	line:567
+config.py	config.py	1;"	kind:file	line:1
 constructor	flask/lib/python2.7/copy_reg.py	/^def constructor(object):$/;"	kind:function	line:27
 copy	flask/lib/python2.7/UserDict.py	/^        import copy$/;"	kind:namespace	line:47
 copy	flask/lib/python2.7/UserDict.py	/^    def copy(self):$/;"	kind:member	line:44
@@ -1618,6 +1630,7 @@ curdir	flask/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pat
 curdir	flask/lib/python2.7/posixpath.py	/^curdir = '.'$/;"	kind:variable	line:30
 currency	flask/lib/python2.7/locale.py	/^def currency(val, symbol=True, grouping=False, international=False):$/;"	kind:function	line:258
 data_encoding	flask/lib/python2.7/codecs.py	/^    data_encoding = 'unknown'$/;"	kind:variable	line:758
+data_required	app/forms.py	/^from wtforms.validators import data_required$/;"	kind:namespace	line:4
 decode	flask/lib/python2.7/codecs.py	/^    def decode(self, input, errors='strict'):$/;"	kind:member	line:151
 decode	flask/lib/python2.7/codecs.py	/^    def decode(self, input, errors='strict'):$/;"	kind:member	line:439
 decode	flask/lib/python2.7/codecs.py	/^    def decode(self, input, final=False):$/;"	kind:member	line:263
@@ -2289,6 +2302,7 @@ findall	flask/lib/python2.7/re.py	/^def findall(pattern, string, flags=0):$/;"	k
 finditer	flask/lib/python2.7/re.py	/^    def finditer(pattern, string, flags=0):$/;"	kind:function	line:185
 fixclasspath	flask/lib/python2.7/site.py	/^def fixclasspath():$/;"	kind:function	line:646
 fixup	flask/lib/python2.7/sre_compile.py	/^                def fixup(literal, flags=flags):$/;"	kind:function	line:101
+flash	app/views.py	/^from flask import render_template, flash, redirect$/;"	kind:namespace	line:2
 fnmatch	flask/lib/python2.7/fnmatch.py	/^def fnmatch(name, pat):$/;"	kind:function	line:24
 fnmatch.py	flask/lib/python2.7/fnmatch.py	1;"	kind:file	line:1
 fnmatchcase	flask/lib/python2.7/fnmatch.py	/^def fnmatchcase(name, pat):$/;"	kind:function	line:69
@@ -2296,6 +2310,7 @@ force_global_eggs_after_local_site_packages	flask/lib/python2.7/site.py	/^def fo
 format	flask/lib/python2.7/locale.py	/^def format(percent, value, grouping=False, monetary=False, *additional):$/;"	kind:function	line:187
 format_string	flask/lib/python2.7/locale.py	/^def format_string(f, val, grouping=False):$/;"	kind:function	line:224
 formatwarning	flask/lib/python2.7/warnings.py	/^def formatwarning(message, category, filename, lineno, line=None):$/;"	kind:function	line:40
+forms.py	app/forms.py	1;"	kind:file	line:1
 fromkeys	flask/lib/python2.7/UserDict.py	/^    def fromkeys(cls, iterable, value=None):$/;"	kind:member	line:106
 functools	flask/lib/python2.7/locale.py	/^import functools$/;"	kind:namespace	line:17
 gb18030.py	flask/lib/python2.7/encodings/gb18030.py	1;"	kind:file	line:1
@@ -2473,6 +2488,7 @@ idna.py	flask/lib/python2.7/encodings/idna.py	1;"	kind:file	line:1
 ignore_errors	flask/lib/python2.7/codecs.py	/^    ignore_errors = None$/;"	kind:variable	line:1094
 ignore_errors	flask/lib/python2.7/codecs.py	/^    ignore_errors = lookup_error("ignore")$/;"	kind:variable	line:1087
 imp	flask/lib/python2.7/distutils/__init__.py	/^import imp$/;"	kind:namespace	line:4
+index	app/views.py	/^def index():$/;"	kind:function	line:8
 index	flask/lib/python2.7/_abcoll.py	/^    def index(self, value):$/;"	kind:member	line:621
 insert	flask/lib/python2.7/_abcoll.py	/^    def insert(self, index, value):$/;"	kind:member	line:658
 insert	flask/lib/python2.7/sre_parse.py	/^    def insert(self, index, code):$/;"	kind:member	line:147
@@ -2561,6 +2577,7 @@ locale_alias	flask/lib/python2.7/locale.py	/^locale_alias = {$/;"	kind:variable	
 locale_encoding_alias	flask/lib/python2.7/locale.py	/^locale_encoding_alias = {$/;"	kind:variable	line:641
 localeconv	flask/lib/python2.7/locale.py	/^    def localeconv():$/;"	kind:function	line:61
 localeconv	flask/lib/python2.7/locale.py	/^def localeconv():$/;"	kind:function	line:113
+login	app/views.py	/^def login():$/;"	kind:function	line:19
 mac_arabic.py	flask/lib/python2.7/encodings/mac_arabic.py	1;"	kind:file	line:1
 mac_centeuro.py	flask/lib/python2.7/encodings/mac_centeuro.py	1;"	kind:file	line:1
 mac_croatian.py	flask/lib/python2.7/encodings/mac_croatian.py	1;"	kind:file	line:1
@@ -2643,6 +2660,7 @@ onceregistry	flask/lib/python2.7/warnings.py	/^    onceregistry = {}$/;"	kind:va
 opcode	flask/lib/python2.7/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
 open	flask/lib/python2.7/codecs.py	/^def open(filename, mode='rb', encoding=None, errors='strict', buffering=1):$/;"	kind:function	line:856
 opengroup	flask/lib/python2.7/sre_parse.py	/^    def opengroup(self, name=None):$/;"	kind:member	line:74
+openid	app/forms.py	/^    openid = StringField('openid', validators=[data_required()])$/;"	kind:variable	line:9
 operator	flask/lib/python2.7/locale.py	/^import operator$/;"	kind:namespace	line:16
 opt_flags	flask/bin/python-config	/^opt_flags = [flag for (flag, val) in opts]$/;"	kind:variable	line:33
 optional	flask/lib/python2.7/encodings/bz2_codec.py	/^import bz2 # this codec needs the optional bz2 module !$/;"	kind:namespace	line:11
@@ -2731,10 +2749,12 @@ readlines	flask/lib/python2.7/codecs.py	/^    def readlines(self, sizehint=None,
 real_distutils	flask/lib/python2.7/distutils/__init__.py	/^    real_distutils = imp.load_module("_virtualenv_distutils", None, distutils_path, ('', '', imp.PKG_DIRECTORY))$/;"	kind:variable	line:17
 realpath	flask/lib/python2.7/ntpath.py	/^realpath = abspath$/;"	kind:variable	line:498
 realpath	flask/lib/python2.7/posixpath.py	/^def realpath(filename):$/;"	kind:function	line:372
+redirect	app/views.py	/^from flask import render_template, flash, redirect$/;"	kind:namespace	line:2
 ref	flask/lib/python2.7/_weakrefset.py	/^from _weakref import ref$/;"	kind:namespace	line:5
 register	flask/lib/python2.7/abc.py	/^    def register(cls, subclass):$/;"	kind:member	line:105
 relpath	flask/lib/python2.7/ntpath.py	/^def relpath(path, start=curdir):$/;"	kind:function	line:511
 relpath	flask/lib/python2.7/posixpath.py	/^def relpath(path, start=curdir):$/;"	kind:function	line:424
+rememberme	app/forms.py	/^    rememberme = BooleanField('rememberme', default=False)$/;"	kind:variable	line:10
 remove	flask/lib/python2.7/_abcoll.py	/^    def remove(self, value):$/;"	kind:member	line:304
 remove	flask/lib/python2.7/_abcoll.py	/^    def remove(self, value):$/;"	kind:member	line:685
 remove	flask/lib/python2.7/_weakrefset.py	/^    def remove(self, item):$/;"	kind:member	line:108
@@ -2742,6 +2762,7 @@ remove_extension	flask/lib/python2.7/copy_reg.py	/^def remove_extension(module, 
 removedirs	flask/lib/python2.7/os.py	/^def removedirs(name):$/;"	kind:function	line:159
 removeduppaths	flask/lib/python2.7/site.py	/^def removeduppaths():$/;"	kind:function	line:113
 renames	flask/lib/python2.7/os.py	/^def renames(old, new):$/;"	kind:function	line:181
+render_template	app/views.py	/^from flask import render_template, flash, redirect$/;"	kind:namespace	line:2
 replace_errors	flask/lib/python2.7/codecs.py	/^    replace_errors = None$/;"	kind:variable	line:1095
 replace_errors	flask/lib/python2.7/codecs.py	/^    replace_errors = lookup_error("replace")$/;"	kind:variable	line:1088
 reset	flask/lib/python2.7/codecs.py	/^    def reset(self):$/;"	kind:member	line:197
@@ -2774,6 +2795,7 @@ reverse	flask/lib/python2.7/_abcoll.py	/^    def reverse(self):$/;"	kind:member	
 riscos	flask/lib/python2.7/os.py	/^    import riscos$/;"	kind:namespace	line:112
 rot13	flask/lib/python2.7/encodings/rot_13.py	/^def rot13(infile, outfile):$/;"	kind:function	line:114
 rot_13.py	flask/lib/python2.7/encodings/rot_13.py	1;"	kind:file	line:1
+run.py	run.py	1;"	kind:file	line:1
 samefile	flask/lib/python2.7/posixpath.py	/^def samefile(f1, f2):$/;"	kind:function	line:153
 sameopenfile	flask/lib/python2.7/posixpath.py	/^def sameopenfile(fp1, fp2):$/;"	kind:function	line:163
 samestat	flask/lib/python2.7/posixpath.py	/^def samestat(s1, s2):$/;"	kind:function	line:173
@@ -2938,6 +2960,8 @@ valid_opts	flask/bin/python-config	/^valid_opts = ['prefix', 'exec-prefix', 'inc
 values	flask/lib/python2.7/UserDict.py	/^    def values(self): return self.data.values()$/;"	kind:member	line:61
 values	flask/lib/python2.7/UserDict.py	/^    def values(self):$/;"	kind:member	line:152
 values	flask/lib/python2.7/_abcoll.py	/^    def values(self):$/;"	kind:member	line:416
+views	app/__init__.py	/^from app import views$/;"	kind:namespace	line:5
+views.py	app/views.py	1;"	kind:file	line:1
 virtual_addsitepackages	flask/lib/python2.7/site.py	/^def virtual_addsitepackages(known_paths):$/;"	kind:function	line:642
 virtual_install_main_packages	flask/lib/python2.7/site.py	/^def virtual_install_main_packages():$/;"	kind:function	line:552
 virtualenv	flask/lib/python2.7/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5

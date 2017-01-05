@@ -2,3 +2,4 @@
 *.pyc
 launch.json
 tmp/
+tags/
